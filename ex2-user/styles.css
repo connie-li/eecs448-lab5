@@ -1,4 +1,4 @@
-/* Used similar overall theme that I used for my Lab3, Ex3 profile page, including some reused styles. */
+/* Reused some styles from my Lab 4, Ex 3 Web Store. */
 body {
     font-family: "Segoe UI Light", sans-serif;
     color: white;
@@ -33,7 +33,6 @@ fieldset {
 
 .inner-content p {
 	margin: 2px;
-	display: inline;
 }
 
 label {
