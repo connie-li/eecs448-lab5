@@ -7,21 +7,46 @@
         exit();
     }
 
-    
-    $queryExists = "SELECT user_id FROM Users WHERE EXISTS (SELECT user_id FROM Users WHERE user_id=" . $_POST["username"] . ");";
+    $username = $_POST["username"];
+    $queryExists = "SELECT user_id FROM Users WHERE user_id=" . $_POST["username"] . ");";
+    if($result = $mysqli->query($queryExists));
+    {
+        echo "result true";
+        $userExists = false;
+        while($row = $result->fetch_assoc())
+        {
+            echo $row["user_id"];
+            if($row["user_id"] == $username)
+            {
+                $userExists = true;
+                echo $userExists;
+            }
+        }
+        if($userExists)
+        {
+            echo "Sorry, that username already exists.\n";
+        }
 
-    echo $queryExists;
-    $userExists = $mysqli->query($queryExists);
-    if($userExists)
-    {
-        echo "Sorry, that username already exists.";
-    }
-    else
-    {
-        $queryInsert = "INSERT INTO Users (user_id) VALUES ('" . $_POST["username"] . "');";
-        echo $queryInsert;
-        echo "The username " . $_POST["username"] . " was added!";
+    //    $numRows = $result->num_rows;
+    //    echo '$numRows = ' . $numRows . "\n";
+    //    if($numRows != 0)
+    //    {
+    //        echo "Sorry, that username already exists.\n";
+    //    }
+        else
+        {
+            $queryInsert = "INSERT INTO Users (user_id) VALUES ('" . $_POST["username"] . "');";
+            if($mysqli->query($queryInsert))
+            {
+                echo "The username " . $_POST["username"] . " was added!\n";
+            }
+            else
+            {
+                echo "Something went wrong.\n";
+            }
+        }
+        $result->free();
     }
     
-$mysqli->close();
+    $mysqli->close();
 ?>
