@@ -1,0 +1,83 @@
+/* Used similar overall theme that I used for my Lab3, Ex3 profile page, including some reused styles. */
+body {
+    font-family: "Segoe UI Light", sans-serif;
+    color: white;
+    background-color: #363636;
+}
+
+div {
+    margin-top: 20px;
+}
+
+#content {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset {
+    padding: 20px;
+    margin: 20px 5px;
+}
+.subtitle {
+    font-size: 150%;
+    padding: 0px 5px;
+    margin:auto;
+}
+
+.inner-content {
+    width: 50%;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.inner-content p {
+	margin: 2px;
+	display: inline;
+}
+
+label {
+    padding-right: 10px;
+}
+
+input[type="number"] {
+    width: 30px;
+    height: 15px;
+}
+
+#buttons {
+    text-align: center;
+    border: none;
+}
+
+.button {
+    padding: 8px 10px 8px;
+    margin: 0px 5px;
+    border-radius: 3px;
+    display: inline-block;
+    font-weight: bold;
+    background: #e6e6e6;
+}
+
+.alert {
+    color: #ff4242;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    display: none;
+    padding: 0px 10px;
+}
+
+#ex-email {
+    color:azure;
+    text-decoration: underline;
+}
+
+table, td, th {
+	border-collapse:collapse;
+	border:thin solid white;
+}
+
+td {
+	text-align:center;
+	vertical-align:middle;
+}
