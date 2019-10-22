@@ -1,0 +1,89 @@
+/* Reused some styles from my Lab 4, Ex 3 Web Store. */
+body {
+    font-family: "Segoe UI Light", sans-serif;
+    color: white;
+    background-color: #363636;
+}
+
+div {
+    margin-top: 20px;
+}
+
+#content {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset {
+    padding: 20px;
+    margin: 20px 5px;
+}
+.subtitle {
+    font-size: 150%;
+    padding: 0px 5px;
+    margin:auto;
+}
+
+.inner-content {
+    width: 80%;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.inner-content p {
+	margin: 2px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+input[type="number"] {
+    width: 30px;
+    height: 15px;
+}
+
+textarea, input {
+    font-family: "Segoe UI Light", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#buttons {
+    text-align: center;
+    border: none;
+}
+
+.button {
+    padding: 8px 10px 8px;
+    margin: 0px 5px;
+    border-radius: 3px;
+    display: inline-block;
+    font-weight: bold;
+    background: #e6e6e6;
+}
+
+.alert {
+    color: #ff4242;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    display: none;
+    padding: 0px 10px;
+}
+
+#ex-email {
+    color:azure;
+    text-decoration: underline;
+}
+
+table, td, th {
+	border-collapse:collapse;
+	border:thin solid white;
+}
+
+td {
+	text-align:center;
+	vertical-align:middle;
+}
