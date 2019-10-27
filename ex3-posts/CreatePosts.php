@@ -23,7 +23,7 @@ if($result = $mysqli->query($queryExists))
 			$userExists = true;
 		}
 	}
-	echo "($userExists)";
+
 	if($userExists)
 	{
 		$queryInsert = "INSERT INTO Posts (content, author_id) VALUES (\"" . "$postContent" . "\", '" . "$username" . "');";
@@ -38,7 +38,7 @@ if($result = $mysqli->query($queryExists))
 	}
 	else
 	{
-		echo "The user \"$username\" does not exist.  Please use an existing username or <a href=\"https://people.eecs.ku.edu/~c817l905/eecs448-lab5/ex2-user/CreateUser.html\">create a new user</a> before posting your comment.";
+		echo "The user \"$username\" does not exist.  Please use an existing username or <a href=\"https://people.eecs.ku.edu/~c817l905/eecs448-lab5/ex2-user/CreateUser.html\">create a new user</a> before posting your message.";
 	}
 	
 	$result->free();
