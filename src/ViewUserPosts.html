@@ -2,9 +2,35 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-        <title></title>
-		<link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Exercise 6: View User Posts - Lab 5, EECS 448</title>
+		<link rel="stylesheet" type="text/css" href="../styles/styles.css">
 	</head>
 	<body>
+		<div>Exercise 6: View User Posts - Lab 5, EECS 448</div>
+		<div id="content">
+			<h1>View User Posts</h1>
+			<div class="inner-content">
+				<fieldset>
+					<form>
+						<label for="user">Choose User: </label>
+						<select><!-- user OPTIONS POPULATED HERE -->
+							<option value="user1">User 1</option>
+						</select>
+						<input type="submit" name="submit" value="Go">
+					</form>
+				</fieldset>
+				<div id="posts-table">
+					<table><caption>User's posts</caption>
+						<tr>
+							<th>Post ID</th><th>Post Content</th>
+						</tr>
+						<tr>
+							<td>000</td><td>Example contents to test how contents fill the table cell.</td>
+						</tr>
+						<!-- PHP insertions here -->
+					</table>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
