@@ -31,7 +31,7 @@
             $queryInsert = "INSERT INTO Users (user_id) VALUES ('$username');";
             if($mysqli->query($queryInsert))
             {
-                echo "The username " . $_POST["username"] . " was added!\n";
+                echo "The username \"$username\" was added!\n";
             }
             else
             {
