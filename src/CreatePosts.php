@@ -38,7 +38,7 @@ if($result = $mysqli->query($queryExists))
 	}
 	else
 	{
-		echo "The user \"$username\" does not exist.  Please use an existing username or <a href=\"/src/CreateUser.html\">create a new user</a> before posting your message.";
+		echo "The user \"$username\" does not exist.  Please use an existing username or <a href=\"CreateUser.html\">create a new user</a> before posting your message.";
 	}
 	
 	$result->free();
