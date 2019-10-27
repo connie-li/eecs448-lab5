@@ -29,6 +29,7 @@ fieldset {
     width: 80%;
     vertical-align: middle;
     margin: auto;
+	font-size: 14pt;
 }
 
 .inner-content p {
@@ -49,6 +50,7 @@ textarea, input {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
+	font-size: 12pt;
 }
 
 #buttons {
@@ -73,11 +75,6 @@ textarea, input {
     padding: 0px 10px;
 }
 
-#ex-email {
-    color:azure;
-    text-decoration: underline;
-}
-
 table, td, th {
 	border-collapse:collapse;
 	border:thin solid white;
@@ -86,4 +83,8 @@ table, td, th {
 td {
 	text-align:center;
 	vertical-align:middle;
+}
+
+.helptext {
+	font-size: 10pt;
 }
