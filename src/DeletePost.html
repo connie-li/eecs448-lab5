@@ -2,9 +2,31 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-        <title></title>
-		<link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Exercise 7: Delete Posts - Lab 5, EECS 448</title>
+		<link rel="stylesheet" type="text/css" href="../styles/styles.css">
 	</head>
 	<body>
+		<div>Exercise 7: Delete Posts - Lab 5, EECS 448</div>
+		<div id="content">
+			<h1>Delete Posts</h1>
+			<div class="inner-content">
+				<form id="form" action="DeletePost.php" method="post">
+					<div id="posts-table">
+						<table><caption>User's posts</caption>
+							<tr>
+								<th>Post ID</th><th>Author</th><th>Post Content</th><th>Delete?</th>
+							</tr>
+							<tr>
+								<td>000</td><td>Test</td><td>Example contents to test how contents fill the table cell.</td><td><input type="checkbox" name="testCheckbox" value="delete"></td>
+							</tr>
+							<!-- PHP insertions here -->
+						</table>
+					</div>
+					<div>
+						<input type="submit" name="submit" value="Confirm Deletion">
+					</div>
+				</form>
+			</div>
+		</div>
 	</body>
 </html>
