@@ -12,9 +12,9 @@
 			<h1>View User Posts</h1>
 			<div class="inner-content">
 				<fieldset>
-					<form>
+					<form action="ViewUserPosts.php" method="post" id="form">
 						<label for="user">Choose User: </label>
-						<select><?php getUsers(); ?>
+						<select name="user" id="user"><?php getUsers(); ?>
 						</select>
 						<input type="submit" name="submit" value="Go">
 					</form>
