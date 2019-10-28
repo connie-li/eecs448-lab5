@@ -8,19 +8,15 @@
 	</head>
 	<body>
 		<div>Exercise 7: Delete Posts - Lab 5, EECS 448</div>
-		<div id="content">
+		<div id="content" class="centered">
 			<h1 class="centered">Delete Posts</h1>
 			<div class="inner-content">
 				<form id="form" action="DeletePost.php" method="post">
 					<div id="posts-table">
-						<table><caption>All Posts</caption>
+						<table><caption class="subtitle">All Posts</caption>
 							<tr>
 								<th>Post ID</th><th>Author</th><th>Post Content</th><th>Delete?</th>
 							</tr>
-							<tr>
-								<td>000</td><td>Test</td><td>Example contents to test how contents fill the table cell.</td><td><input type="checkbox" name="testCheckbox" value="delete"></td>
-							</tr>
-							<!-- PHP insertions here -->
 							<?php populateTable(); ?>
 						</table>
 					</div>
