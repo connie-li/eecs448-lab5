@@ -29,6 +29,7 @@ if($result = $mysqli->query($query))
 	echo '</table></div></div>
 		</body>
 		</html>';
+	$result->free();
 }
 else
 {

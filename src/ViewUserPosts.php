@@ -17,6 +17,7 @@ function getUsers() {
 		{
 			echo '<option value="' . $row["user_id"] . '">' . $row["user_id"] . '</option>';
 		}
+		$result->free();
 	}
 	else
 	{
@@ -68,6 +69,7 @@ function getPosts() {
 			</div>
 		</body>
 		</html>';
+		$result->free();
 	}
 	else
 	{
