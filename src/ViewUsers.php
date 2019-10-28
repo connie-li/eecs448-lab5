@@ -20,7 +20,7 @@ if($result = $mysqli->query($query))
 		<body>
 			<h4>EECS 448, Lab 5, Exercise 5: View Users</h4>
 			<div id="content">
-				<div class="centered"><table><caption class="subtitle">View Users</caption>';
+				<div class="centered"><h1>View Users</h1><table><caption class="subtitle">Users</caption>';
 	while($row = $result->fetch_assoc())
 	{
 		echo '<tr><td>' . $row["user_id"] . '</td></tr>';
