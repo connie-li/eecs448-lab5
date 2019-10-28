@@ -4,15 +4,16 @@
 		<meta charset="utf-8">
         <title>Exercise 7: Delete Posts - Lab 5, EECS 448</title>
 		<link rel="stylesheet" type="text/css" href="../styles/styles.css">
+		<?php include 'DeletePost.php' ?>
 	</head>
 	<body>
 		<div>Exercise 7: Delete Posts - Lab 5, EECS 448</div>
 		<div id="content">
-			<h1>Delete Posts</h1>
+			<h1 class="centered">Delete Posts</h1>
 			<div class="inner-content">
 				<form id="form" action="DeletePost.php" method="post">
 					<div id="posts-table">
-						<table><caption>User's posts</caption>
+						<table><caption>All Posts</caption>
 							<tr>
 								<th>Post ID</th><th>Author</th><th>Post Content</th><th>Delete?</th>
 							</tr>
@@ -20,6 +21,7 @@
 								<td>000</td><td>Test</td><td>Example contents to test how contents fill the table cell.</td><td><input type="checkbox" name="testCheckbox" value="delete"></td>
 							</tr>
 							<!-- PHP insertions here -->
+							<?php populateTable(); ?>
 						</table>
 					</div>
 					<div>
