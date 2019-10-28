@@ -8,10 +8,27 @@ if ($mysqli->connect_errno) {
 	exit();
 }
 
-
-if($result = $mysqli->query($queryExists))
+$query = "SELECT * FROM Users;";
+if($result = $mysqli->query($query))
 {
+	echo '<!DOCTYPE html><html>
+		<head>
+			<meta charset="utf-8">
+			<title>Exercise 5: View Users - Lab 5, EECS 448</title>
+			<link rel="stylesheet" type="text/css" href="../styles/styles.css">
+		</head>
+		<body>
+			<h4>EECS 448, Lab 5, Exercise 5: View Users</h4>
+			<div id="content">
+				<div class="inner-content"><table><caption class="subtitle">View Users</caption>';
+	while($row = $result->fetch_assoc())
+	{
+		
+	}
 	
+	echo '</table></div></div>
+		</body>
+		</html>';
 }
 else
 {
